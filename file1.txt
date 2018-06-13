@@ -1,8 +1,10 @@
-123!!
-
-
-hello
-
-branch1 - we are in new branch!!
-
-b1
+pipeline {
+    agent any
+        stages('Compile Stage') {
+        
+            steps {
+                sh 'mvn --version'
+                  }
+                                }
+    
+        }
